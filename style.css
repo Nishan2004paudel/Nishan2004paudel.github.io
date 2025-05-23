@@ -1026,3 +1026,15 @@ header.scrolled {
     justify-content: center;
   }
 }
+input[name="_honey"],
+.hidden-honey {
+  display: none !important;
+}
+
+#thank-you-message {
+  display: none;
+  color: var(--color-success, green);
+  margin-top: 1em;
+  font-weight: bold;
+  text-align: center;
+}
