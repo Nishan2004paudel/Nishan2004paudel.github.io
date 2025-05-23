@@ -1,309 +1,519 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishan Paudel</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-</head>
-
-<body>
-      <nav class="navbar navbar-expand-sm navbar-light mb-1">
-          <a class="navbar-brand" href="#about">
-            <img src="1747461349377.jpg" alt="Logo" class="logo-img">
-                    Nishan
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nishan Paudel | Software Engineer</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+      type="module"
+    ></script>
+    <script
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+      nomodule
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar">
+          <a href="#home" class="logo">
+            <span>Nishan</span>
           </a>
-      </nav>
+          <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <ul class="nav-menu" id="nav-menu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-
-    <div class="container">
-        <section class="landing">
-            <div class="row vertical-center">
-                <div class="col-lg-8 text-left pb-5">
-                    <h1 class="display-1">Nishan Paudel</h1>
-                    <p class="lead pl-2">Student</p>
-                </div>
-                 <div class="col-lg-4 text-center my-auto pb-5 rounded-circle">
-                  <img class="img-fluid rounded-circle" src="1747461349377.jpg" alt="Profile Photo">
-                </div>
-
-        </section>
-
-        <section id="about" class="mt-5 mb-5">
-          <h4 class="display-4">A little about me,</h4>
-            <div class="row">
-                <div class="col-lg-6 wrap text-left">
-                    <div class="about-desc">
-                        <h1 class="bold-text">About</h1>
-                        <div class="pt-5">
-                            
-                            <p>As a Software Engineering student with a passion for both technology and society, I strive not only for personal growth but also to contribute meaningfully to the world around me.
- I am currently focused on software-related work and research, exploring innovative solutions and deepening my technical expertise.
-My journey continues to be shaped by my love for Nepali literature, a deep interest in science and innovation, and a strong passion for cricket—especially test cricket. I am also a history enthusiast, fascinated by the stories and lessons of the past. As a curious learner and thinker, I constantly seek new ideas, ask questions, and challenge the status quo to inspire change.
-Above all, I live by Einstein's philosophy: "Strive not to be a success, but rather to be of value." With a mind always in motion and countless "tabs" open, I am committed to making a positive impact at the intersection of society, technology, and beyond.
-                            </p>
-                         
-            <ul class="social-links list-unstyled mt-4">
-                <li><a href="mailto:nishanpaudel444@gmail.com" target="_blank" title="Send Email"><ion-icon name="mail-outline"></ion-icon></a></li>
-                <li><a href="https://github.com/Nishan2004paudel" target="_blank" rel="noopener" title="GitHub Profile"><ion-icon name="logo-github"></ion-icon></a></li>
-                <li><a href="https://linkedin.com/in/nishanpaudel2004" target="_blank" rel="noopener" title="LinkedIn Profile"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-            </ul>
-
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wrap align-content-center">
-                    <div class="row mt-5 flex-column">
-                        <div class="col-md-8">
-                            <h2 class="mb-4">My Skills</h2>
-                        </div>
-                        <div class="col-md-6 mt-3">
-                            <div class="progress-wrap">
-                                <h4>C Programming</h4>
-                                <div class="progress progress-style">
-                                    <div class="progress-bar color-1" role="progressbar" aria-valuenow="75"
-                                        aria-valuemin="0" aria-valuemax="100" style="width:75%">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-3">
-                            <div class="progress-wrap">
-                                <h4>JavaScript</h4>
-                                <div class="progress progress-style">
-                                    <div class="progress-bar color-1" role="progressbar" aria-valuenow="60"
-                                        aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mt-3">
-                            <div class="progress-wrap">
-                                <h4>PHP</h4>
-                                <div class="progress progress-style">
-                                    <div class="progress-bar color-1" role="progressbar" aria-valuenow="85"
-                                        aria-valuemin="0" aria-valuemax="100" style="width:85%">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 class="animate-text">Nishan Paudel</h1>
+              <p class="lead animate-text delay-1">
+                Software Engineering Student
+              </p>
+              <div class="hero-buttons animate-text delay-2">
+                <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                <a href="Nishan_Paudel_CV.pdf" download class="btn btn-outline"
+                  >Download CV</a
+                >
+              </div>
             </div>
-        </section>
-        <section class="mt-5 mb-5">
-            <h1 class="display-4">Download My CV</h1>
-            <p>You can download my CV by clicking the button below.</p>
-                <a href="./Nishan_Paudel_CV.pdf" download class="btn btn-primary">Download CV</a>
-        </section>
-        <section class="interests pt-5 pb-5">
-          <h1 class="display-4">Tech I'm familiar with</h1>
-          <h1 class="bold-text bg-text">Tech Stack</h1>
-            <div class="row pt-5">
-              <div class="col-lg-3 col-md-4">
-                <div class="icon-box">
-                  <ion-icon name="logo-html5"></ion-icon>
-                  <h3>HTML</h3>
+            <div class="hero-image animate-fade-in">
+              <img src="1747461349377.jpg" alt="Nishan Paudel" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">About Me</h2>
+            <div class="section-subtitle">My Introduction</div>
+          </div>
+          <div class="about-content">
+            <div class="about-text">
+              <p>
+                As a Software Engineering student with a passion for both
+                technology and society, I strive not only for personal growth
+                but also to contribute meaningfully to the world around me.
+              </p>
+              <p>
+                I am currently focused on software-related work and research,
+                exploring innovative solutions and deepening my technical
+                expertise.
+              </p>
+              <p>
+                My journey continues to be shaped by my love for Nepali
+                literature, a deep interest in science and innovation, and a
+                strong passion for cricket—especially test cricket. I am also a
+                history enthusiast, fascinated by the stories and lessons of the
+                past.
+              </p>
+              <p>
+                Above all, I live by Einstein's philosophy: "Strive not to be a
+                success, but rather to be of value." With a mind always in
+                motion and countless "tabs" open, I am committed to making a
+                positive impact at the intersection of society, technology, and
+                beyond.
+              </p>
+              <div class="about-buttons">
+                <a href="Nishan_Paudel_CV.pdf" download class="btn btn-primary"
+                  >Download CV</a
+                >
+              </div>
+            </div>
+            <div class="social-links">
+              <a
+                href="mailto:nishanpaudel444@gmail.com"
+                class="social-link"
+                title="Email"
+              >
+                <ion-icon name="mail-outline"></ion-icon>
+              </a>
+              <a
+                href="https://github.com/Nishan2004paudel"
+                class="social-link"
+                title="GitHub"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+              <a
+                href="https://linkedin.com/in/nishanpaudel2004"
+                class="social-link"
+                title="LinkedIn"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Skills</h2>
+            <div class="section-subtitle">My Technical Level</div>
+          </div>
+          <div class="skills-container">
+            <div class="skills-category">
+              <h3 class="skills-category-title">Programming Languages</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <h4>C Programming</h4>
+                    <span>75%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 75%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <h4>JavaScript</h4>
+                    <span>60%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 60%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <h4>PHP</h4>
+                    <span>85%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <h4>Python</h4>
+                    <span>70%</span>
+                  </div>
+                  <div class="skill-bar">
+                    <div class="skill-percentage" style="width: 70%"></div>
+                  </div>
                 </div>
               </div>
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <ion-icon name="logo-css3"></ion-icon>
-            <h3>CSS</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <ion-icon name="logo-javascript"></ion-icon>
-            <h3>JavaScript</h3>
-          </div>
-        </div>
-          <div class="col-lg-3 col-md-4">
-            <div class="icon-box">
-              <ion-icon name="logo-python"></ion-icon>
-              <h3>Python</h3>
-            </div>
-          </div>
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <ion-icon name="logo-react"></ion-icon>
-            <h3>React</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <ion-icon name="logo-github"></ion-icon>
-            <h3>Git & GitHub</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <ion-icon name="logo-nodejs"></ion-icon>
-            <h3>Node.js</h3>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4">
-          <div class="icon-box">
-            <ion-icon name="terminal-outline"></ion-icon>
-            <h3>C Programming</h3>
-          </div>
-        </div>
-    </div>
-  </section>
-
-<section>
-    <h1 class="display-4 mt-5">Experience</h1>
-    <h1 class="bold-text bg-text">Profile</h1>
-    <div class="row d-flex">
-        <div class="col-md-10">
-
-
-            <div class="mt-3">
-                <div class="py-4">
-                    <div class="desc">
-                        <h4>Academic Coordinator</h4>
-                        <p>Hult Prize at NCIT</p>
-                    </div>
-                    <div>
-                        <p>2025 - Present</p>
-                    </div>
-                </div>
-
-                <div class="py-4">
-                    <div class="desc">
-                        <h4>International Service Chair</h4>
-                        <p>Rotaract Club of Bhaktapur</p>
-                    </div>
-                    <div>
-                        <p>2024 - 2025</p>
-                    </div>
-                </div>
-
-                <div class="py-4">
-                    <div class="desc">
-                        <h4>General Member</h4>
-                        <p>Rotaract Club of Bhaktapur</p>
-                    </div>
-                    <div>
-                        <p>2023 - Present</p>
-                    </div>
-                </div>
-
-                <div class="py-4">
-                    <div class="desc">
-                        <h4>Science Tutor (Volunteer)</h4>
-                        <p>Shree Sanjay Sai Vidhya Mandir</p>
-                    </div>
-                    <div>
-                        <p>2021 - 2022</p>
-                    </div>
-                </div>
-
-   
             </div>
 
-            <h1 class="display-4 mt-5">Education</h1>
-            <h1 class="bold-text bg-text">Academics</h1>
+            <div class="skills-category">
+              <h3 class="skills-category-title">Technologies & Tools</h3>
+              <div class="tech-grid">
+                <div class="tech-item">
+                  <ion-icon name="logo-html5"></ion-icon>
+                  <h4>HTML</h4>
+                </div>
+                <div class="tech-item">
+                  <ion-icon name="logo-css3"></ion-icon>
+                  <h4>CSS</h4>
+                </div>
+                <div class="tech-item">
+                  <ion-icon name="logo-react"></ion-icon>
+                  <h4>React</h4>
+                </div>
 
-            <div class="py-4">
-                <div class="desc">
-                    <h4>Bachelor in Software Engineering</h4>
-                    <p>Nepal College of Information Technology (NCIT)</p>
+                <div class="tech-item">
+                  <ion-icon name="logo-github"></ion-icon>
+                  <h4>Git & GitHub</h4>
                 </div>
-                <div>
-                    <p>2022 - Present</p>
+                <div class="tech-item">
+                  <ion-icon name="terminal-outline"></ion-icon>
+                  <h4>Command Line</h4>
                 </div>
+              </div>
             </div>
-
-            <div class="py-4">
-                <div class="desc">
-                    <h4>+2 in Science</h4>
-                    <p>Khwopa Secondary School</p>
-                </div>
-                <div>
-                    <p>2020 - 2022</p>
-                </div>
-            </div>
-
-            <div class="py-4">
-                <div class="desc">
-                    <h4>Secondary Education Examination (SEE)</h4>
-                    <p>Shree Sanjay Sai Vidhya Mandir</p>
-                </div>
-                <div>
-                    <p>2009 - 2020</p>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
-</section>
-<section>
-    <h1 class="display-4 mt-5">Projects</h1>
-    <h1 class="bold-text bg-text">Work</h1>
-    <div class="row d-flex">
-        <div class="col-md-10">
-            <div class="py-4">
-                <div class="desc">
-                    <h4>Hundred Prediction System</h4>
-                    <p>Python · Machine Learning · Streamlit</p>
-                </div>
-                <div>
-                    <p><strong>2024</strong></p>
-                </div>
-                <div>
-                    <p>
-                        Developed a prediction system tailored for "The Hundred" cricket tournament using Python and machine learning algorithms. The app forecasts scores and win probabilities, considering the tournament's unique 100-ball format. Deployed on Streamlit for an interactive, web-based experience.
-                    </p>
-                    <div class="mt-2">
-                        <a href="https://github.com/Nishan2004paudel/HundredPredictionSystem" target="_blank" rel="noopener">
-                            <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" style="width: 32px; margin-right: 10px;">
-                        </a>
-                        <a href="https://hundredpredictionsystem.streamlit.app/" target="_blank" rel="noopener">
-                            <img src="https://streamlit.io/images/brand/streamlit-logo-secondary-colormark-darktext.svg" alt="Streamlit App" style="width: 100px;">
-                        </a>
-                    </div>
-                </div>
+      </section>
+
+      <!-- Experience Section -->
+      <section id="experience" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Experience</h2>
+            <div class="section-subtitle">My Journey</div>
+          </div>
+
+          <div class="tabs">
+            <div class="tabs-header">
+              <button class="tab-btn active" data-target="experience-tab">
+                Experience
+              </button>
+              <button class="tab-btn" data-target="education-tab">
+                Education
+              </button>
             </div>
-        </div>
-    </div>
-</section>
 
-
-        <section>
-            <h1 class="display-4 mt-5">Let's Talk</h1>
-            <h1 class="bold-text bg-text">Contact</h1>
-                    <div class="text-left">
-                            <div class="pt-5">
-                                <h2 class="mb-5">just want to have a chat? 
-                                <br/>
-                                My inbox is always open!</h2>
-                                <ul class="social-links list-unstyled mt-4">
-                                    <li><a href="mailto:nishanpaudel444@gmail.com" target="_blank" title="Send Email"><ion-icon name="mail-outline"></ion-icon></a></li>
-                                    <li><a href="https://github.com/Nishan2004paudel" target="_blank" rel="noopener" title="GitHub Profile"><ion-icon name="logo-github"></ion-icon></a></li>
-                                    <li><a href="https://linkedin.com/in/nishanpaudel2004" target="_blank" rel="noopener" title="LinkedIn Profile"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-                                </ul>
-                            </div>
+            <div class="tabs-content">
+              <div class="tab-pane active" id="experience-tab">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025 - Present</div>
+                    <div class="timeline-content">
+                      <h3>Academic Coordinator</h3>
+                      <p>Hult Prize at NCIT</p>
                     </div>
-            
-        </section>
-    </div>
+                  </div>
 
-  
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2024 - 2025</div>
+                    <div class="timeline-content">
+                      <h3>International Service Chair</h3>
+                      <p>Rotaract Club of Bhaktapur</p>
+                    </div>
+                  </div>
 
-</body>
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2023 - Present</div>
+                    <div class="timeline-content">
+                      <h3>General Member</h3>
+                      <p>Rotaract Club of Bhaktapur</p>
+                    </div>
+                  </div>
 
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2021 - 2022</div>
+                    <div class="timeline-content">
+                      <h3>Science Tutor (Volunteer)</h3>
+                      <p>Shree Sanjay Sai Vidhya Mandir</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane" id="education-tab">
+                <div class="timeline">
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 - Present</div>
+                    <div class="timeline-content">
+                      <h3>Bachelor in Software Engineering</h3>
+                      <p>Nepal College of Information Technology (NCIT)</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2020 - 2022</div>
+                    <div class="timeline-content">
+                      <h3>+2 in Science</h3>
+                      <p>Khwopa Secondary School</p>
+                    </div>
+                  </div>
+
+                  <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2009 - 2020</div>
+                    <div class="timeline-content">
+                      <h3>Secondary Education Examination (SEE)</h3>
+                      <p>Shree Sanjay Sai Vidhya Mandir</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Projects</h2>
+            <div class="section-subtitle">My Recent Work</div>
+          </div>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-img">
+                <img
+                  src="https://images.pexels.com/photos/6804581/pexels-photo-6804581.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  alt="Cricket Prediction System"
+                />
+              </div>
+              <div class="project-info">
+                <h3>Hundred Prediction System</h3>
+                <p>Python · Machine Learning · Streamlit</p>
+                <p class="project-description">
+                  Developed a prediction system tailored for "The Hundred"
+                  cricket tournament using Python and machine learning
+                  algorithms. The app forecasts scores and win probabilities,
+                  considering the tournament's unique 100-ball format.
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Nishan2004paudel/HundredPredictionSystem"
+                    class="btn btn-sm"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <ion-icon name="logo-github"></ion-icon> Code
+                  </a>
+                  <a
+                    href="https://hundredpredictionsystem.streamlit.app/"
+                    class="btn btn-sm btn-primary"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <ion-icon name="globe-outline"></ion-icon> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Add more project cards as needed -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="section-subtitle">Get in Touch</div>
+          </div>
+
+          <div class="contact-container">
+            <div class="contact-info">
+              <div class="contact-card">
+                <ion-icon name="mail-outline"></ion-icon>
+                <h3>Email</h3>
+                <a href="mailto:nishanpaudel444@gmail.com"
+                  >nishanpaudel444@gmail.com</a
+                >
+              </div>
+
+              <div class="contact-card">
+                <ion-icon name="logo-linkedin"></ion-icon>
+                <h3>LinkedIn</h3>
+                <a
+                  href="https://linkedin.com/in/nishanpaudel2004"
+                  target="_blank"
+                  rel="noopener"
+                  >linkedin.com/in/nishanpaudel2004</a
+                >
+              </div>
+
+              <div class="contact-card">
+                <ion-icon name="logo-github"></ion-icon>
+                <h3>GitHub</h3>
+                <a
+                  href="https://github.com/Nishan2004paudel"
+                  target="_blank"
+                  rel="noopener"
+                  >github.com/Nishan2004paudel</a
+                >
+              </div>
+            </div>
+
+            <div class="contact-form-container">
+              <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Your email"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Your message"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                  <ion-icon name="paper-plane-outline"></ion-icon> Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <h3>Nishan Paudel</h3>
+            <p>Software Engineering Student</p>
+          </div>
+
+          <div class="footer-links">
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <a
+              href="mailto:nishanpaudel444@gmail.com"
+              class="social-link"
+              title="Email"
+            >
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+            <a
+              href="https://github.com/Nishan2004paudel"
+              class="social-link"
+              title="GitHub"
+            >
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a
+              href="https://linkedin.com/in/nishanpaudel2004"
+              class="social-link"
+              title="LinkedIn"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-copyright">
+          <p>&copy; 2025 Nishan Paudel. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <a href="#home" class="scroll-top" id="scroll-top" title="Back to top">
+      <ion-icon name="arrow-up-outline"></ion-icon>
+    </a>
+
+    <script src="main.js"></script>
+  </body>
 </html>
