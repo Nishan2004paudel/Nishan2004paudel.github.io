@@ -316,6 +316,18 @@ header.scrolled {
   border: 5px var(--color-white);
 }
 
+/* Hero image caption styling */
+.hero-image-caption {
+  margin-top: 1.2rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--color-primary-dark);
+  font-style: italic;
+  letter-spacing: 0.5px;
+  opacity: 0.85;
+  font-family: var(--font-heading);
+}
+
 /*---------------------
       About Section
   ----------------------*/
