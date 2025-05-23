@@ -443,6 +443,7 @@
                     placeholder="Your email"
                     required
                   />
+                  <span id="email-error" class="form-error"></span>
                 </div>
 
                 <div class="form-group">
@@ -508,6 +509,24 @@
                           "Oops! There was a problem submitting your form.";
                       });
                   });
+
+                // Custom email validation message
+                var emailInput = document.getElementById("email");
+                var emailError = document.getElementById("email-error");
+                if (emailInput && emailError) {
+                  emailInput.addEventListener("invalid", function (e) {
+                    e.preventDefault();
+                    if (emailInput.validity.valueMissing) {
+                      emailError.textContent = "Email is required.";
+                    } else {
+                      emailError.textContent =
+                        "Please enter a valid email address.";
+                    }
+                  });
+                  emailInput.addEventListener("input", function () {
+                    emailError.textContent = "";
+                  });
+                }
               </script>
             </div>
           </div>

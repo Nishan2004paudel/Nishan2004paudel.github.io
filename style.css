@@ -750,6 +750,14 @@ header.scrolled {
   box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.2);
 }
 
+.form-error {
+  color: var(--color-error, #ef4444);
+  font-size: 0.95em;
+  margin-top: 0.2em;
+  display: block;
+  min-height: 1.2em;
+}
+
 /*---------------------
       Footer
   ----------------------*/
