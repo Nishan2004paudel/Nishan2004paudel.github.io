@@ -115,10 +115,7 @@ if (contactForm) {
       // Reset form
       contactForm.reset();
 
-      // Show success message (in a real app, you'd handle the response properly)
-      alert(
-        "Message sent successfully! (This is a demo - no message was actually sent)"
-      );
+      // Remove the demo alert (no alert shown)
 
       // Reset button
       submitBtn.innerHTML = originalText;
