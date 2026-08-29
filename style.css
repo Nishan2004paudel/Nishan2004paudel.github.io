@@ -595,6 +595,13 @@ header.scrolled {
   color: var(--color-dark-gray);
 }
 
+.internship-duration {
+  margin-top: var(--spacing-xs);
+  color: var(--color-accent);
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
 /*---------------------
       Projects Section
   ----------------------*/
