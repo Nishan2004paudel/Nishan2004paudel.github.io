@@ -453,12 +453,14 @@ header.scrolled {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   text-align: center;
   padding: var(--spacing-md);
   background-color: var(--color-white);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
   transition: var(--transition-fast);
+  min-height: 120px;
 }
 
 .tech-item:hover {
@@ -466,18 +468,25 @@ header.scrolled {
   box-shadow: var(--shadow-md);
 }
 
-.tech-item ion-icon {
-  font-size: 2rem;
-  color: var(--color-primary);
-  margin-bottom: var(--spacing-sm);
-}
-
+.tech-item ion-icon,
 .tech-logo {
   width: 2.2rem;
   height: 2.2rem;
-  object-fit: contain;
-  margin-bottom: var(--spacing-sm);
   display: block;
+  flex-shrink: 0;
+  line-height: 1;
+  margin-bottom: var(--spacing-sm);
+}
+
+.tech-item ion-icon {
+  font-size: 2.2rem;
+  color: var(--color-primary);
+}
+
+.tech-logo {
+  object-fit: contain;
+  aspect-ratio: 1;
+  max-width: 100%;
 }
 
 .tech-item h4 {
