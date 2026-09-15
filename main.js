@@ -5,7 +5,6 @@ const header = document.querySelector("header");
 const scrollTop = document.getElementById("scroll-top");
 const navLinks = document.querySelectorAll(".nav-link");
 const tabBtns = document.querySelectorAll(".tab-btn");
-const skillBars = document.querySelectorAll(".skill-percentage");
 const sections = document.querySelectorAll("section");
 const contactForm = document.getElementById("contact-form");
 
@@ -73,30 +72,6 @@ tabBtns.forEach((btn) => {
   });
 });
 
-// Animate skill bars on scroll
-function animateSkillBars() {
-  const skillsSection = document.getElementById("skills");
-  if (!skillsSection) return;
-
-  const sectionPos = skillsSection.getBoundingClientRect().top;
-  const screenPos = window.innerHeight / 1.3;
-
-  if (sectionPos < screenPos) {
-    skillBars.forEach((bar) => {
-      const percentage = bar.style.width;
-      bar.style.width = "0";
-      setTimeout(() => {
-        bar.style.width = percentage;
-      }, 100);
-    });
-
-    // Remove event listener after animation
-    window.removeEventListener("scroll", animateSkillBars);
-  }
-}
-
-window.addEventListener("scroll", animateSkillBars);
-
 // Form submission (example for demonstration - not functional without backend)
 if (contactForm) {
   contactForm.addEventListener("submit", function (e) {
@@ -126,6 +101,5 @@ if (contactForm) {
 
 // Initialize animations when page loads
 document.addEventListener("DOMContentLoaded", function () {
-  // Animate skill bars if skills section is already in view
-  animateSkillBars();
+  // No skill-bar animation needed for the simplified language list.
 });
